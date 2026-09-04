@@ -1,8 +1,6 @@
 module github.com/cinema-platform-organization/media-service
 
-go 1.24.0
-
-toolchain go1.24.10
+go 1.27.1
 
 require (
 	github.com/aws/aws-sdk-go-v2 v1.39.6
@@ -10,12 +8,10 @@ require (
 	github.com/aws/aws-sdk-go-v2/credentials v1.18.21
 	github.com/aws/aws-sdk-go-v2/feature/s3/manager v1.20.4
 	github.com/aws/aws-sdk-go-v2/service/s3 v1.90.0
-	github.com/disintegration/imaging v1.6.2
+	github.com/cinema-platform-organization/contracts v1.0.1
 	github.com/gabriel-vasile/mimetype v1.4.11
 	github.com/gin-gonic/gin v1.11.0
 	github.com/google/uuid v1.6.0
-	github.com/kolesa-team/go-webp v1.0.5
-	github.com/cinema-platform-organization/contracts v1.0.2
 	google.golang.org/grpc v1.77.0
 )
 
@@ -36,7 +32,6 @@ require (
 	github.com/aws/smithy-go v1.23.2 // indirect
 	github.com/bytedance/sonic v1.14.0 // indirect
 	github.com/bytedance/sonic/loader v0.3.0 // indirect
-	github.com/chai2010/webp v1.4.0 // indirect
 	github.com/cloudwego/base64x v0.1.6 // indirect
 	github.com/gin-contrib/sse v1.1.0 // indirect
 	github.com/go-playground/locales v0.14.1 // indirect
@@ -58,7 +53,6 @@ require (
 	go.uber.org/mock v0.5.0 // indirect
 	golang.org/x/arch v0.20.0 // indirect
 	golang.org/x/crypto v0.43.0 // indirect
-	golang.org/x/image v0.0.0-20211028202545-6944b10bf410 // indirect
 	golang.org/x/mod v0.28.0 // indirect
 	golang.org/x/net v0.46.1-0.20251013234738-63d1a5100f82 // indirect
 	golang.org/x/sync v0.17.0 // indirect
