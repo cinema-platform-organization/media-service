@@ -9,6 +9,8 @@ import (
 	"syscall"
 	"time"
 
+	"github.com/joho/godotenv"
+
 	"github.com/cinema-platform-organization/media-service/internal/config"
 	"github.com/cinema-platform-organization/media-service/internal/infrastructure/grpc"
 	httpserver "github.com/cinema-platform-organization/media-service/internal/infrastructure/http"
@@ -17,6 +19,8 @@ import (
 )
 
 func main() {
+	_ = godotenv.Load()
+
 	cfg := config.Load()
 
 	logger.Init(cfg.Logging.Level)
