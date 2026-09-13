@@ -19,7 +19,13 @@ import (
 )
 
 func main() {
-	_ = godotenv.Load()
+	isProduction := os.Getenv("APP_ENV") == "production" || os.Getenv("NODE_ENV") == "production"
+	
+	if !isProduction {
+		if _, err := os.Stat(".env"); err == nil {
+			_ = godotenv.Load()
+		}
+	}
 
 	cfg := config.Load()
 
